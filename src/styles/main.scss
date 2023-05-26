@@ -1,0 +1,96 @@
+@use "base_mobile_home.scss";
+@use "desktop_home.scss";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+//@import "/home/santy01/portafolio/node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+/* Estilos generales para barra nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171721;
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-toggler-icon:before,
+  .navbar-toggler-icon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler-icon:before {
+    top: -6px;
+  }
+  
+  .navbar-toggler-icon:after {
+    bottom: -6px;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+    bottom: 0;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
