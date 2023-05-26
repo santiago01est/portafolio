@@ -1,96 +1,159 @@
-@use "base_mobile_home.scss";
-@use "desktop_home.scss";
+
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 //@import "/home/santy01/portafolio/node_modules/bootstrap/scss/bootstrap";
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+   
+body{
+  height: 100vh;
+  background-color: #171721;
+}
 
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover{
+  color:rgb(255, 187, 0);
+}
+
+header{
+  position: relative;
+  padding: 0 2rem;
+}
 
 /* Estilos generales para barra nav */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #171721;
-    padding: 10px;
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn{
+  color: #fff;
+  font-size: 1.5rem ;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn{
+  background-color: rgb(255, 187, 0);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active{
+  scale: 0.95;
+}
+
+
+
+/*  Dropdown menu */
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top:60px;
+  height: 0;
+  width: 300px;
+  background: rgb(255, 255, 255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+  height: 240px;
+}
+
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn{
+    display: none;
   }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .navbar-toggler:focus {
-    outline: none;
-  }
-  
-  .navbar-toggler-icon {
+
+  .navbar .toggle_btn{
     display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    position: relative;
-    transition: background-color 0.3s ease;
   }
-  
-  .navbar-toggler-icon:before,
-  .navbar-toggler-icon:after {
-    content: "";
+
+  .dropdown_menu{
     display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    position: absolute;
-    transition: transform 0.3s ease;
   }
-  
-  .navbar-toggler-icon:before {
-    top: -6px;
-  }
-  
-  .navbar-toggler-icon:after {
-    bottom: -6px;
-  }
-  
-  .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-color: transparent;
-  }
-  
-  .navbar-toggler.collapsed .navbar-toggler-icon:before {
-    transform: rotate(-45deg);
-    top: 0;
-  }
-  
-  .navbar-toggler.collapsed .navbar-toggler-icon:after {
-    transform: rotate(45deg);
-    bottom: 0;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-left: 20px;
-  }
-  
-  .nav-link {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
+}
+
+@media (max-width: 576px) {
+.dropdown_menu{
+  left: 2rem;
+  width: unset;
+}
+}
+
+/*  Home */
+section#home{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#home h1{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
