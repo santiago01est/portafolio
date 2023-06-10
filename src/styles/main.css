@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 /** COLORS **/
 /** BODY */
@@ -135,7 +134,7 @@ header {
     padding-right: 55px;
   }
   .container img {
-    max-width: 100%; /* Opcional: establece el ancho máximo de la imagen */
+    max-width: 100%;
   }
 }
 @media (max-width: 576px) {
