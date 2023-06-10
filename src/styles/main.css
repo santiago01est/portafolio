@@ -1,4 +1,7 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+/** COLORS **/
+/** BODY */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +25,7 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 187, 0);
+  color: #ffbb00;
 }
 
 header {
@@ -59,7 +62,7 @@ header {
 }
 
 .action_btn {
-  background-color: rgb(255, 187, 0);
+  background-color: #ffbb00;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -88,7 +91,7 @@ header {
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1019607843);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -112,6 +115,7 @@ header {
   justify-content: center;
 }
 
+/** MOBILE */
 @media (max-width: 992px) {
   .navbar .links,
   .navbar .action_btn {
@@ -123,6 +127,16 @@ header {
   .dropdown_menu {
     display: block;
   }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 55px;
+  }
+  .container img {
+    max-width: 100%; /* Opcional: establece el ancho máximo de la imagen */
+  }
 }
 @media (max-width: 576px) {
   .dropdown_menu {
@@ -132,7 +146,6 @@ header {
 }
 /*  Home */
 section#home {
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;

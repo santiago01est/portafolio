@@ -2,6 +2,14 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 //@import "/home/santy01/portafolio/node_modules/bootstrap/scss/bootstrap";
 
+/** COLORS **/
+
+$Cinder: #171721;
+$White: #fff;
+$Selective_Yellow: #ffbb00;
+$Background_down_menu:#ffffff1a;
+
+/** BODY */
 
 *{
   margin: 0;
@@ -12,7 +20,7 @@
    
 body{
   height: 100vh;
-  background-color: #171721;
+  background-color: $Cinder;
 }
 
 li{
@@ -21,12 +29,12 @@ li{
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: $White;
   font-size: 1rem;
 }
 
 a:hover{
-  color:rgb(255, 187, 0);
+  color:$Selective_Yellow;
 }
 
 header{
@@ -57,15 +65,15 @@ header{
 }
 
 .navbar .toggle_btn{
-  color: #fff;
+  color: $White;
   font-size: 1.5rem ;
   cursor: pointer;
   display: none;
 }
 
 .action_btn{
-  background-color: rgb(255, 187, 0);
-  color: #fff;
+  background-color: $Selective_Yellow;
+  color: $White;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
@@ -78,7 +86,7 @@ header{
 
 .action_btn:hover{
   scale: 1.05;
-  color: #fff;
+  color: $White;
 }
 
 .action_btn:active{
@@ -95,7 +103,7 @@ header{
   top:60px;
   height: 0;
   width: 300px;
-  background: rgb(255, 255, 255,0.1);
+  background: $Background_down_menu;
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -120,6 +128,7 @@ header{
 }
 
 
+/** MOBILE */
 @media (max-width: 992px) {
   .navbar .links,
   .navbar .action_btn{
@@ -133,6 +142,18 @@ header{
   .dropdown_menu{
     display: block;
   }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 55px;
+  }
+  
+  .container img {
+    max-width: 100%; /* Opcional: establece el ancho máximo de la imagen */
+  }
 }
 
 @media (max-width: 576px) {
@@ -144,13 +165,12 @@ header{
 
 /*  Home */
 section#home{
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: $White;
 }
 
 #home h1{
