@@ -1,5 +1,5 @@
 
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 //@import "/home/santy01/portafolio/node_modules/bootstrap/scss/bootstrap";
 
 /** COLORS **/
@@ -15,7 +15,7 @@ $Background_down_menu:#ffffff1a;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Inter', sans-serif;
 }
    
 body{
@@ -127,6 +127,22 @@ header{
   justify-content: center;
 }
 
+/* Text Styles */
+.container_profile h1{
+  color: $White;
+  text-align: start;
+}
+
+h2{
+  color: $White;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+p{
+  text-align: justify;
+}
+
 
 /** MOBILE */
 @media (max-width: 992px) {
@@ -143,17 +159,20 @@ header{
     display: block;
   }
 
-  .container {
-    display: flex;
+  .container_profile {
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 50px;
-    padding-right: 55px;
+    text-align: center;
+    padding: 0 2rem;
   }
   
-  .container img {
-    max-width: 100%; 
+  .container_profile img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80%; 
   }
+
+  
 }
 
 @media (max-width: 576px) {
@@ -163,17 +182,23 @@ header{
 }
 }
 
+
 /*  Home */
 section#home{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: $White;
+  padding: 0 2rem;
+}
+/*  About */
+section#about{
+  display: flex;
+  flex-direction: column;
+  color: $White;
+  padding: 0 2rem;
+  margin-top: 40px;
 }
 
-#home h1{
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}
+
