@@ -60,25 +60,73 @@ header {
   display: none;
 }
 
-.action_btn {
+/* Buttons */
+.action_btn_menu {
   background-color: #ffbb00;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2 ease;
 }
 
-.action_btn:hover {
+.action_btn_menu:hover {
   scale: 1.05;
   color: #fff;
 }
 
-.action_btn:active {
+.action_btn_menu:active {
+  scale: 0.95;
+}
+
+.action_btn_index_fill {
+  background-color: #ffbb00;
+  color: #171721;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.5 ease;
+}
+
+.action_btn_index_out {
+  background-color: #171721;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-color: #ffbb00;
+  outline: none;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.5 ease;
+  margin-right: 20px;
+}
+
+.action_btn_index_out:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn_index_fill:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn_index_fill:active {
+  scale: 0.95;
+}
+
+.action_btn_index_out:active {
   scale: 0.95;
 }
 
@@ -108,7 +156,7 @@ header {
   justify-content: center;
 }
 
-.dropdown_menu .action_btn {
+.dropdown_menu .action_btn_menu {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -128,6 +176,14 @@ h2 {
 
 p {
   text-align: justify;
+}
+
+/* Container About me*/
+.container_btn_aboutme {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /** MOBILE */
@@ -171,7 +227,7 @@ section#home {
 }
 
 /*  About */
-section#about {
+section#about, #services {
   display: flex;
   flex-direction: column;
   color: #fff;
