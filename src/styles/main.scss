@@ -1,10 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
 //@import "/home/santy01/portafolio/node_modules/bootstrap/scss/bootstrap";
 
 /** COLORS **/
 
 $Cinder: #171721;
+$Cinder_white: #2b2b36;
 $White: #fff;
 $Selective_Yellow: #ffbb00;
 $Background_down_menu:#ffffff1a;
@@ -174,16 +175,21 @@ header{
 .container_profile h1{
   color: $White;
   text-align: start;
+  font-size: 36px;
 }
 
-h2{
-  color: $White;
+
+h2 {
+  color: #fff;
   text-align: start;
   margin-bottom: 20px;
+  font-size: 26px;
 }
 
-p{
+p {
   text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 /* Container About me*/
@@ -193,6 +199,51 @@ p{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* CARD SERVICES */
+.container_services{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: center;
+}
+.container_services .card {
+  position: relative;
+  background-color: $Cinder_white;
+  flex-wrap: wrap;
+  width: 300px;
+  border-radius: 14px;
+  border: 1px solid $Cinder;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card .card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card .card-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card .card_img{
+  width: 10%;
+}
+.card .card_img_bottom{
+  width: 10%;
+  margin: 0 20px 8px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
 /** MOBILE */
 @media (max-width: 992px) {
   .navbar .links,
@@ -221,6 +272,18 @@ p{
     max-width: 80%; 
   }
 
+  /* CARD SERVICES */
+  .card .card_img{
+    width: 14%;
+  }
+  .card .card_img_bottom{
+    width: 8%;
+    margin: 0 20px 8px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   
 }
 
@@ -230,7 +293,6 @@ p{
   width: unset;
 }
 }
-
 
 /*  Home */
 section#home{
@@ -243,8 +305,6 @@ section#home{
 }
 /*  About */
 section#about,#services{
-  display: flex;
-  flex-direction: column;
   color: $White;
   padding: 0 2rem;
   margin-top: 40px;
