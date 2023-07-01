@@ -112,7 +112,7 @@ header{
   background-color: $Cinder;
   color: $White;
   padding: 0.8rem 1rem;
-  border-color: #ffbb00;
+  border-color: $Selective_Yellow;
   outline: none;
   width: 150px;
   border-radius: 10px;
@@ -195,7 +195,7 @@ p {
 /* Container About me*/
 .container_btn_aboutme{
   display: flex;
-  justify-content:end;
+  justify-content:start;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -206,12 +206,14 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  margin:40px 180px;
+  gap: 20px;
 }
 
 .container_skills .card_skill{
-  width: 220px;
-  height: 250px;
+  width: 170px;
+  height: 200px;
+  border-radius: 14px;
   background: $Cinder_white;
   display: flex;
   justify-content: center;
@@ -246,7 +248,7 @@ p {
   stroke-dashoffset: calc(440 - (440 * var(--num)) /100);
   opacity: 0;
   animation: fadeIn 1s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 
 @keyframes fadeIn{
@@ -266,16 +268,13 @@ p {
   inset: 5px;
   z-index: 10;
   transform: rotate(calc(3.6deg * var(--num)));
+  animation: animatedDot 1.2s linear forwards;
 }
 
-.active{
-  animation: animatedDot 2s linear forwards;
+.dot:hover::after{
+  animation: animatedDot 1.2s linear forwards;
 }
 
-.activeFadeIn{
-  animation: fadeIn 1s linear forwards;
-  animation-delay: 2s;
-}
 
 .number_skill{
   position: absolute;
@@ -285,7 +284,14 @@ p {
   align-items: center;
   flex-direction: column;
   opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 1.2s;
 
+}
+
+.number_skill:hover{
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 1.2s;
 }
 
 .number_skill h2{
@@ -304,9 +310,10 @@ p {
 }
 
 .number_skill p{
-  font-weight: 300;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 2px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: $White;
 }
@@ -411,7 +418,7 @@ p {
   .container_profile img {
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 80%; 
+    max-width: 60%; 
   }
 
   /* CARD SERVICES */
@@ -424,6 +431,16 @@ p {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  /* SKILLS */
+  .container_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:40px auto;
+    gap: 20px;
   }
 
   
