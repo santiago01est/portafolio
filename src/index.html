@@ -62,33 +62,81 @@
 
     </section>
 
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="container_skills">
+        <div class="card_skill">
+          <div class="percent" style="--clr:#ffbb00;--num:85;">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number_skill">
+              <h2>85<span>%</span></h2>
+              <p>HTML</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_skill">
+          <div class="percent" style="--clr:#ffbb00;--num:50;">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number_skill">
+              <h2>50<span>%</span></h2>
+              <p>HTML</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_skill"></div>
+      </div>
+    </section>
+
     <section id="services">
       <h2>Services</h2>
       <div class="container_services">
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
-          <h2 class="card-title">Investigación de usuarios</h2>
+          <h2 class="card-title">UX/UI Design</h2>
           <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
             de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
-            <img class="card_img_bottom" src="assets/img/javaduke.png" alt="img_emoji">
+            <img class="card_img_bottom" src="assets/img/service_design_ux.png" alt="img_emoji">
         </div>
 
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
-          <h2 class="card-title">Investigación de usuarios</h2>
+          <h2 class="card-title">Mobile Development</h2>
           <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
             de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
-            <img class="card_img_bottom" src="assets/img/javaduke.png" alt="img_emoji">
+            <img class="card_img_bottom" src="assets/img/service_mobile.png" alt="img_emoji">
         </div>
 
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
-          <h2 class="card-title">Investigación de usuarios</h2>
+          <h2 class="card-title">Web Development</h2>
           <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
             de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
-            <img class="card_img_bottom" src="assets/img/javaduke.png" alt="img_emoji">
+            <img class="card_img_bottom" src="assets/img/service_website.png" alt="img_emoji">
         </div>
         
+      </div>
+
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="container_projects">
+        <div class="card">
+          <img class="card_img" src="assets/img/img_option.png" alt="img_option">
+          <h2 class="card-title">Web Development</h2>
+          <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
+            de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
+            <img class="card_img_bottom" src="assets/img/service_website.png" alt="img_emoji">
+        </div>
       </div>
 
     </section>
@@ -107,6 +155,42 @@
         : 'fa-solid fa-bars'
     }
   </script>
+
+<script>
+  // Seleccionar el elemento que se va a animar
+  const dot = document.getElementsByClassName('dot')[0];
+  const dot2 = document.getElementsByClassName('dot')[1];
+
+  const number_skill = document.getElementsByClassName('number_skill')[0];
+  const number_skill2 = document.getElementsByClassName('number_skill')[1];
+
+  // Crear una instancia de Intersection Observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Si el elemento está en pantalla, agregar la clase para activar la animación
+        dot.classList.add('active');
+        dot2.classList.add('active');
+
+        number_skill.classList.add('activeFadeIn');
+        number_skill2.classList.add('activeFadeIn');
+      } else {
+        // Si el elemento está fuera de pantalla, remover la clase para desactivar la animación
+        dot.classList.remove('active');
+        dot2.classList.remove('active');
+
+        number_skill.classList.remove('activeFadeIn');
+        number_skill2.classList.remove('activeFadeIn');
+      }
+    });
+  });
+
+  // Observar el elemento
+  observer.observe(dot);
+  observer.observe(dot2);
+</script>
+
+
 </body>
 
 </html>
