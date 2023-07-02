@@ -210,30 +210,55 @@
       </div>
     </section>
 
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div class="container_hobbies">
+
+        <div class="card_hobbies">
+          <div id="animContainer_jogging" class="animContainer"> </div>
+          <p class="card-hobbie-title">Jogging</p> 
+        </div>
+
+        <div class="card_hobbies">
+          <div id="animContainer_music" class="animContainer"> </div>
+          <p class="card-hobbie-title">Music</p> 
+        </div>
+
+        <div class="card_hobbies">
+          <div id="animContainer_movies" class="animContainer"> </div>
+          <p class="card-hobbie-title">Movies</p> 
+        </div>
+
+        <div class="card_hobbies">
+          <div id="animContainer_camera" class="animContainer"> </div>
+          <p class="card-hobbie-title">Photography</p> 
+        </div>
+
+      </div>
     <section id="services">
       <h2>Services</h2>
       <div class="container_services">
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
           <h2 class="card-title">UX/UI Design</h2>
-          <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
-            de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
+          <p class="card-description">Customized design, adapted to your brand, your target audience and your objectives. We accompany you throughout the entire process, from research to implementation, including prototyping and testing.
+            A quality, professional and creative work.</p>
             <img class="card_img_bottom" src="assets/img/service_design_ux.png" alt="img_emoji">
         </div>
 
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
           <h2 class="card-title">Mobile Development</h2>
-          <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
-            de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
+          <p class="card-description">Creation of the strategic definition and interface design, to programming, testing and publication on the main platforms. In addition, I advise you throughout the process, so that your application is a success.
+            A quality, professional and creative work.</p>
             <img class="card_img_bottom" src="assets/img/service_mobile.png" alt="img_emoji">
         </div>
 
         <div class="card">
           <img class="card_img" src="assets/img/img_option.png" alt="img_option">
           <h2 class="card-title">Web Development</h2>
-          <p class="card-description">Realizo entrevistas, encuestas y análisis de datos para comprender las necesidades
-            de los usuarios y obtener información valiosa para el diseño de la experiencia de usuario.</p>
+          <p class="card-description">service to develop a customized web project, with professional design and optimal functionality. I accompany you throughout the process, from research to implementation, through prototyping and testing.
+            A quality, professional and creative work.</p>
             <img class="card_img_bottom" src="assets/img/service_website.png" alt="img_emoji">
         </div>
         
@@ -269,6 +294,44 @@
         : 'fa-solid fa-bars'
     }
   </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+<script>
+  
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animContainer_jogging'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://lottie.host/a9c395dc-1f73-462c-833a-f35ba30b6477/jdA3BWkyay.json' // lottie file path
+  })
+
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animContainer_music'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://lottie.host/4e0333c7-d195-43a4-9561-f52121f83987/73w01WsdPk.json' // lottie file path
+  })
+
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animContainer_movies'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://lottie.host/141d8a4c-b048-4bf7-b83f-e0c6bd3a90f7/YJFZvkXkYV.json' // lottie file path
+  })
+
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('animContainer_camera'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://lottie.host/2a84dbb1-3c22-4935-b717-522dd2057bd8/xCom3wy1qj.json' // lottie file path
+  })
+
+  
+</script>
 
 <script>
   // Seleccionar el elemento que se va a animar

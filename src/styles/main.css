@@ -73,7 +73,7 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   gap: 50px;
-  height: 50vh;
+  height: 70vh;
   padding: 0 2rem;
   margin-top: 80px;
 }
@@ -225,13 +225,13 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 180px;
+  margin: 40px 100px;
   gap: 20px;
 }
 
 .container_skills .card_skill {
-  width: 170px;
-  height: 200px;
+  width: 160px;
+  height: 190px;
   border-radius: 14px;
   background: #2b2b36;
   display: flex;
@@ -352,6 +352,38 @@ p {
   box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
 }
 
+/*  HOBBIES */
+.container_hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card_hobbies {
+  width: 160px;
+  height: 190px;
+  border-radius: 14px;
+  background: #2b2b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animContainer {
+  width: 100px;
+  height: 100px;
+}
+
+.card-hobbie-title {
+  color: #fff;
+  font-weight: bold;
+  margin: 8px;
+}
+
 /* CARD SERVICES */
 .container_services {
   display: flex;
@@ -386,8 +418,8 @@ p {
 }
 
 .card .card-description {
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: #a7a7a7;
   margin-bottom: 20px;
 }
 
@@ -418,6 +450,7 @@ p {
   .container_profile {
     display: inline-block;
     padding: 0 2rem;
+    height: 60vh;
     gap: 0;
     margin-top: 20px;
   }
@@ -455,11 +488,49 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .container_profile {
+    display: inline-block;
+    padding: 0 2rem;
+    height: 50vh;
+    gap: 0;
+    margin-top: 20px;
+  }
   .container_profile img {
     max-width: 80%;
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
+  }
+  /* SKILLS */
+  .container_skills .card_skill {
+    width: 100px; /* Ajusta el ancho según tu preferencia */
+    height: 120px; /* Ajusta el alto según tu preferencia */
+    margin: 10px; /* Espacio entre las cards */
+    background-color: #171721;
+  }
+  .container_skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 40px;
+  }
+  /*  HOBBIES */
+  .card_hobbies {
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    background: #171721;
+  }
+  .container_hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 40px;
+  }
+  .animContainer {
+    width: 80px;
+    height: 80px;
   }
 }
 @media (max-width: 576px) {
@@ -479,7 +550,7 @@ section#home {
 }
 
 /*  About */
-section#about, #skills, #services, #projects {
+section#about, #skills, #hobbies, #services, #projects {
   color: #fff;
   padding: 0 2rem;
   margin-top: 80px;
