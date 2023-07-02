@@ -503,8 +503,8 @@ p {
   }
   /* SKILLS */
   .container_skills .card_skill {
-    width: 100px; /* Ajusta el ancho según tu preferencia */
-    height: 120px; /* Ajusta el alto según tu preferencia */
+    width: 90px; /* Ajusta el ancho según tu preferencia */
+    height: 110px; /* Ajusta el alto según tu preferencia */
     margin: 10px; /* Espacio entre las cards */
     background-color: #171721;
   }
@@ -517,20 +517,20 @@ p {
   }
   /*  HOBBIES */
   .card_hobbies {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 110px;
     border-radius: 14px;
     background: #171721;
   }
   .container_hobbies {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 40px 0;
     gap: 40px;
   }
   .animContainer {
-    width: 80px;
-    height: 80px;
+    max-width: 80%;
   }
 }
 @media (max-width: 576px) {
