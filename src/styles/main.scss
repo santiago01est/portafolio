@@ -206,8 +206,11 @@ header{
 h2 {
   color: #fff;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 26px;
+}
+
+.sectiontitle{
+  margin: 40px auto;
 }
 
 p {
@@ -406,6 +409,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
+  gap: 20px;
   justify-content: center;
 }
 .container_services .card {
@@ -416,7 +420,6 @@ p {
   border-radius: 14px;
   border: 1px solid $Cinder;
   padding: 20px;
-  margin: 20px;
 }
 
 
@@ -452,7 +455,49 @@ p {
 }
 
 
+/* CARD PROJECTS */
 
+.container_projects{
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 20px auto;
+  gap: 20px;
+  justify-content: center;
+}
+.container_projects .card_project {
+  background-color: $Cinder_white;
+  flex-wrap: wrap;
+  width: 300px;
+  border-radius: 14px;
+  border: 1px solid $Cinder;
+  padding: 20px;
+}
+
+
+.card_project .card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+
+.card_project .card-description {
+  font-size: 16px;
+  color: $textdescription;
+  margin-bottom: 20px;
+}
+
+.card_project .card_img_project{
+  width: 100%;
+  height: 150px;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+
+.card_project .card_img{
+  width: 10%;
+}
 /** MOBILE */
 
 
@@ -597,7 +642,7 @@ section#home{
 section#about,#skills,#hobbies,#services,#projects{
   color: $White;
   padding: 0 2rem;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 
