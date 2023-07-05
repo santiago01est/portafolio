@@ -482,7 +482,13 @@ p {
 
 /* CONTACT ME */
 /* Css para formulario */
+#contactProfessional {
+  display: flex;
+  justify-content: center;
+}
+
 form {
+  width: 80%;
   background-color: #2b2b36;
   border: 1px solid #c6f0f8;
   padding: 20px 40px;
@@ -757,6 +763,7 @@ button.Boton:active {
   }
   /* CONTACT ME */
   form {
+    width: auto;
     background-color: #2b2b36;
     border: 1px solid #c6f0f8;
     padding: 10px 20px;

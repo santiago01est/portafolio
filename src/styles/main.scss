@@ -504,7 +504,13 @@ p {
 /* CONTACT ME */
 /* Css para formulario */
 
+#contactProfessional{
+  display: flex;
+  justify-content: center;
+}
+
 form {
+  width: 80%;
   background-color: $Cinder_white;
   border: 1px solid $Humming_Bird;
   padding: 20px 40px;
@@ -806,6 +812,7 @@ button.Boton:active {
 /* CONTACT ME */
 
 form {
+  width: auto;
   background-color: $Cinder_white;
   border: 1px solid $Humming_Bird;
   padding: 10px 20px;
