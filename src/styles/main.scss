@@ -523,6 +523,33 @@ textarea:focus-visible {
   margin: 15px 0;
 }
 
+
+.form-group--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.form-group--invalid .input {
+  border: 1px solid $Selective_Yellow;
+  border-radius: 7px;
+}
+
+.form-group--invalid .input-label {
+  color: $Selective_Yellow;
+}
+
+.input-message-error {
+  display: none;
+}
+
+.form-group--invalid .input-message-error {
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* */
+
 input {
   vertical-align: middle;
 }
