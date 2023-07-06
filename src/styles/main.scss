@@ -107,7 +107,7 @@ header{
 /* Buttons */
 .action_btn_menu{
   background-color: $Selective_Yellow;
-  color: $White;
+  color: $Cinder;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
@@ -708,8 +708,7 @@ footer{
 #footer p{
   color: $White;
   font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 .container_footer{
   display: flex;
@@ -741,7 +740,7 @@ footer{
 }
 .footer_social{
   display: flex;
-  width: 40%;
+  width: 50%;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -757,6 +756,10 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer_social_icon i{
+  width: 100%;
 }
 
 /** MOBILE */

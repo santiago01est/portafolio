@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <title>Portafolio</title>
 </head>
@@ -16,47 +17,50 @@
   <header>
     <div class="navbar">
       <div class="logo">
-        <a href="#home">
-        <img src="assets/img/logo.png" alt="Logo"></div>
+        <a href="#homeprofile">
+          <img src="assets/img/logo.png" alt="Logo">
+      </div>
       </a>
       <ul class="links">
-        <li><a href="home">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="services">Service</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li><a href="#homeprofile">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
-      <a href="#" class="action_btn">Get Started</a>
+      <a href="#contact" class="action_btn">Contact me</a>
       <div class="toggle_btn">
         <i class="fa-solid fa-bars"></i>
       </div>
     </div>
 
     <div class="dropdown_menu">
-      <li><a href="home">Home</a></li>
-      <li><a href="about">About</a></li>
-      <li><a href="services">Service</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="#" class="action_btn_menu">Get Started</a></li>
+      <li><a href="#homeprofile">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="action_btn_menu">Contact me</a></li>
     </div>
 
   </header>
 
   <main>
-    <section class="container_profile">
+    <section id="homeprofile" class="container_profile" data-aos="fade-down-right" data-aos-duration="2000">
       <h1>Hello,
         <br>
         I'm Santiago
       </h1>
       <img src="assets/img/profile.png" alt="Profile">
     </section>
-    <section id="home">
+    <section id="home" data-aos="fade-down" data-aos-duration="2000">
       <br>
       <p id="iam" class="text_paragraph">Computer and Systems Engineering student, FullStack and
         Mobile Web Developer.</p>
       <br>
       <br>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-left" data-aos-duration="2000">
       <h2 class="sectiontitle">About Me</h2>
       <p>My name is Santiago Estrada, I am a ninth semester student of Systems Engineering and Computer Science, I am
         from Colombia. I am passionate about working in development teams and learn from the process and team
@@ -68,7 +72,7 @@
 
     </section>
 
-    <section id="skills">
+    <section id="skills" data-aos="flip-down" data-aos-duration="2000">
       <h2 class="sectiontitle">Skills</h2>
       <div class="container_skills">
         <div class="card_skill">
@@ -214,7 +218,7 @@
       </div>
     </section>
 
-    <section id="hobbies">
+    <section id="hobbies" data-aos="fade-right" data-aos-duration="2000">
       <h2 class="sectiontitle">Hobbies</h2>
       <div class="container_hobbies">
 
@@ -240,7 +244,7 @@
 
       </div>
     </section>
-    <section id="services">
+    <section id="services" data-aos="fade-left" data-aos-duration="2000">
       <h2 class="sectiontitle">Services</h2>
       <div class="container_services">
         <div class="card">
@@ -277,7 +281,7 @@
 
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up-right" data-aos-duration="2000">
       <h2 class="sectiontitle">Professional Experience</h2>
       <div class="container_projects">
         <div class="card_project">
@@ -346,7 +350,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up" data-aos-duration="2000">
       <h2 class="sectiontitle">Contact</h2>
       <div id="contactProfessional">
         <form action="https://formsubmit.co/39745c9d71dbde50f91cade726aa6df7" method="POST" id="formulario">
@@ -368,8 +372,9 @@
           </div>
           <div class="form-group">
             <label class="input-label" for="numberphone">Teléfono/Celular:</label>
-            <input id="numberphone" name="numberphone" class="input" type="text" placeholder="Ingrese un número de contacto"
-              pattern="\d{10}" required minlength="10" maxlength="10" data-tipo="number">
+            <input id="numberphone" name="numberphone" class="input" type="text"
+              placeholder="Ingrese un número de contacto" pattern="\d{10}" required minlength="10" maxlength="10"
+              data-tipo="number">
             <span class="input-message-error">Este campo no es valido</span>
           </div>
           <!-- 
@@ -449,11 +454,11 @@
       </div>
     </section>
 
-    
+
   </main>
 
   <footer>
-    <section id="footer">
+    <section id="footer" data-aos="fade-up" data-aos-duration="2000">
       <div class="container_footer">
         <div class="footer_phrase">
           <div class="footer_logo">
@@ -462,39 +467,41 @@
           <h3 class="footer_title">"Let's turn your ideas into reality"</h3>
         </div>
 
-          <div class="footer_social">
+        <div class="footer_social">
 
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
-            <div class="footer_social_icon">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-
+          <div class="footer_social_icon">
+            <a href="https://www.linkedin.com/in/santiago-estrada-dev/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
           </div>
-        
+
+          <div class="footer_social_icon">
+            <a href="https://github.com/santiago01est" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+          <div class="footer_social_icon">
+            <a href="https://www.behance.net/santiagoestrada3" target="_blank"><i class="fa-brands fa-behance"></i></a>
+          </div>
+
+          <div class="footer_social_icon">
+            <a href="https://www.instagram.com/santiago.estrada01/?hl=es" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <div class="footer_social_icon">
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+
+          <div class="footer_social_icon">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+
+        </div>
+
       </div>
       <p>&copy; 2023 Santiago Estrada</p>
     </section>
   </footer>
-  
+
 
   <script>
     const toggleBtn = document.querySelector('.toggle_btn')
@@ -640,6 +647,12 @@
     observer.observe(dot10);
     */
   </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script type="module" src="./js/main.js"></script>
 
 </body>
