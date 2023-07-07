@@ -46,7 +46,7 @@
   </header>
 
   <main>
-    <section id="homeprofile" class="container_profile">
+    <section id="homeprofile" class="container_profile" >
       <h1>Hello,
         <br>
         I'm Santiago
@@ -60,7 +60,7 @@
       <br>
       <br>
     </section>
-    <section id="about" >
+    <section id="about" data-aos="fade-up"data-aos-duration="2000">
       <h2 class="sectiontitle">About Me</h2>
       <p>My name is Santiago Estrada, I am a ninth semester student of Systems Engineering and Computer Science, I am
         from Colombia. I am passionate about working in development teams and learn from the process and team
@@ -72,7 +72,7 @@
 
     </section>
 
-    <section id="skills" >
+    <section id="skills" data-aos="flip-up" data-aos-duration="2000">
       <h2 class="sectiontitle">Skills</h2>
       <div class="container_skills">
         <div class="card_skill">
@@ -218,7 +218,7 @@
       </div>
     </section>
 
-    <section id="hobbies" >
+    <section id="hobbies" data-aos="fade-up"data-aos-duration="2000">
       <h2 class="sectiontitle">Hobbies</h2>
       <div class="container_hobbies">
 
@@ -281,7 +281,7 @@
 
     </section>
 
-    <section id="projects" >
+    <section id="projects" data-aos="fade-up"data-aos-duration="2000">
       <h2 class="sectiontitle">Professional Experience</h2>
       <div class="container_projects">
         <div class="card_project">
@@ -350,7 +350,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up"data-aos-duration="2000">
       <h2 class="sectiontitle">Contact</h2>
       <div id="contactProfessional">
         <form action="https://formsubmit.co/39745c9d71dbde50f91cade726aa6df7" method="POST" id="formulario">
@@ -458,7 +458,7 @@
   </main>
 
   <footer>
-    <section id="footer">
+    <section id="footer" data-aos="fade-up"data-aos-duration="2000">
       <div class="container_footer">
         <div class="footer_phrase">
           <div class="footer_logo">
@@ -501,6 +501,7 @@
       <p>&copy; 2023 Santiago Estrada</p>
     </section>
   </footer>
+
 
 
   <script>
@@ -554,6 +555,12 @@
 
 
   </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
   <script>
   // Seleccionar el elemento que se va a animar
@@ -647,7 +654,6 @@
     observer.observe(dot10);
     */
   </script>
-
 
   <script type="module" src="./js/main.js"></script>
 
